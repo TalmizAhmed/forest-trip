@@ -39,13 +39,6 @@
           "label": "Validation",
           "collapsible": true,
           "...": "../../../../models/form-common/_number-validation-fields.json"
-        },
-        {
-          "component": "number",
-          "name": "stepValue",
-          "label": "Step Value",
-          "valueType": "number",
-          "description": "Step value for the range"
         }
       ]
     }
