@@ -23,10 +23,11 @@ export default async function decorate(fieldDiv, fieldJson) {
   console.log('RANGE DIV: ', fieldDiv);
   console.log('RANGE JSON: fieldJson', fieldJson);
   const input = fieldDiv.querySelector('input');
-  // modify the type in case it is not range.
+  // input.step = fieldJson.properties.stepValue;
   input.type = 'range';
   input.min = input.min || 1;
   input.max = input.max || 100;
+  input.step = 10;
   // create a wrapper div to provide the min/max and current value
   const div = document.createElement('div');
   div.className = 'range-widget-wrapper decorated';
