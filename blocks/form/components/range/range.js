@@ -6,7 +6,6 @@ function updateBubble(input, element) {
   const current = Math.ceil((value - min) / step);
   const total = Math.ceil((max - min) / step);
   const bubble = element.querySelector('.range-bubble');
-  // during initial render the width is 0. Hence using a default here.
   const bubbleWidth = bubble.getBoundingClientRect().width || 31;
   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
   bubble.innerText = `${value}`;
@@ -23,12 +22,9 @@ export default async function decorate(fieldDiv, fieldJson) {
   console.log('RANGE DIV: ', fieldDiv);
   console.log('RANGE JSON: fieldJson', fieldJson);
   const input = fieldDiv.querySelector('input');
-  // input.step = fieldJson.properties.stepValue;
   input.type = 'range';
   input.min = input.min || 1;
   input.max = input.max || 100;
-  input.step = fieldJson.properties.stepValue || 1;
-  // create a wrapper div to provide the min/max and current value
   const div = document.createElement('div');
   div.className = 'range-widget-wrapper decorated';
   input.after(div);
