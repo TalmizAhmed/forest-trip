@@ -23,6 +23,7 @@ export default async function decorate(fieldDiv, fieldJson) {
   console.log('RANGE JSON: fieldJson', fieldJson);
   const input = fieldDiv.querySelector('input');
   input.type = 'range';
+  input.step = fieldJson.properties.stepValue || 1;
   input.min = input.min || 1;
   input.max = input.max || 100;
   const div = document.createElement('div');
