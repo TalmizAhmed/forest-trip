@@ -39,20 +39,6 @@
           "label": "Validation",
           "collapsible": true,
           "...": "../../../../models/form-common/_number-validation-fields.json"
-        },
-        {
-          "component": "container",
-          "name": "customProperties",
-          "label": "Custom Properties",
-          "collapsible": true,
-          "fields": [
-            {
-              "component": "number",
-              "name": "stepValue",
-              "label": "Step Value",
-              "valueType": "number"
-            }
-          ]
         }
       ]
     }
