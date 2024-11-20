@@ -4050,20 +4050,6 @@
             "description": "Error message shown when the entered value is more than maximum."
           }
         ]
-      },
-      {
-        "component": "container",
-        "name": "customProperties",
-        "label": "Custom Properties",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "number",
-            "name": "stepValue",
-            "label": "Step Value",
-            "valueType": "number"
-          }
-        ]
       }
     ]
   },
