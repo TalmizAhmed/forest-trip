@@ -25,6 +25,7 @@ export default async function decorate(fieldDiv, fieldJson) {
   input.type = 'range';
   input.min = input.min || 1;
   input.max = input.max || 100;
+  input.step = fieldJson.properties.stepValue || 1;
   const div = document.createElement('div');
   div.className = 'range-widget-wrapper decorated';
   input.after(div);
