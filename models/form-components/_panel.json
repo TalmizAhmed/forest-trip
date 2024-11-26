@@ -64,27 +64,6 @@
                             "valueType": "number",
                             "value": 3,
                             "placeholder": "No Limit test"
-                        },
-                        {
-                            "component": "select",
-                            "label": "gibberish",
-                            "name": "pleasework",
-                            "valueType": "string",
-                            "value": "number",
-                            "options": [
-                                {
-                                    "name": "String",
-                                    "value": "string"
-                                },
-                                {
-                                    "name": "Boolean",
-                                    "value": "boolean"
-                                },
-                                {
-                                    "name": "Number",
-                                    "value": "number"
-                                }
-                            ]
                         }
                     ]
                 },
