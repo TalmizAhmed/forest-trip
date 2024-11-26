@@ -459,6 +459,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
@@ -3054,6 +3062,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
@@ -3175,6 +3191,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
