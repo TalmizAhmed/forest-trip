@@ -2670,7 +2670,8 @@
             "name": "maxOccur",
             "label": "Maximum repetitions",
             "valueType": "number",
-            "description": "Maximum number of times the panel can appear on the form"
+            "description": "Maximum number of times the panel can appear on the form",
+            "placeholder": "No Limit"
           }
         ]
       },
