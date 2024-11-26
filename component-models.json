@@ -459,14 +459,6 @@
                 "value": "12"
               }
             ]
-          },
-          {
-            "component": "number",
-            "name": "randomFieldToTest",
-            "label": "Random number field",
-            "valueType": "number",
-            "value": 3,
-            "placeholder": "No Limit test"
           }
         ]
       },
@@ -612,6 +604,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -845,6 +845,14 @@
             ]
           },
           {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
+          },
+          {
             "component": "select",
             "label": "Data type of submitted value",
             "name": "type",
@@ -1055,6 +1063,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -1312,6 +1328,14 @@
             ]
           },
           {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
+          },
+          {
             "component": "text",
             "name": "enum",
             "label": "Options (Data Value)",
@@ -1525,6 +1549,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -1752,6 +1784,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
@@ -1957,6 +1997,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "aem-content",
@@ -2174,6 +2222,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -2405,6 +2461,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -2654,6 +2718,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
@@ -2837,6 +2909,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -3062,14 +3142,6 @@
                 "value": "12"
               }
             ]
-          },
-          {
-            "component": "number",
-            "name": "randomFieldToTest",
-            "label": "Random number field",
-            "valueType": "number",
-            "value": 3,
-            "placeholder": "No Limit test"
           }
         ]
       },
@@ -3191,14 +3263,6 @@
                 "value": "12"
               }
             ]
-          },
-          {
-            "component": "number",
-            "name": "randomFieldToTest",
-            "label": "Random number field",
-            "valueType": "number",
-            "value": 3,
-            "placeholder": "No Limit test"
           }
         ]
       },
@@ -3344,6 +3408,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -3557,6 +3629,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           },
           {
             "component": "text",
@@ -3865,6 +3945,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
@@ -4012,6 +4100,14 @@
                     "value": "12"
                   }
                 ]
+              },
+              {
+                "component": "number",
+                "name": "randomFieldToTest",
+                "label": "Random number field",
+                "valueType": "number",
+                "value": 3,
+                "placeholder": "No Limit test"
               }
             ]
           },
@@ -4221,6 +4317,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
@@ -4424,6 +4528,14 @@
             ]
           },
           {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
+          },
+          {
             "component": "boolean",
             "name": "showLink",
             "label": "Replace consent text with weblink(s)",
@@ -4573,6 +4685,14 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": 3,
+            "placeholder": "No Limit test"
           }
         ]
       },
