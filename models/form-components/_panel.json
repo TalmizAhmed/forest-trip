@@ -62,7 +62,7 @@
                             "name": "randomFieldToTest",
                             "label": "Random number field",
                             "valueType": "number",
-                            "placeholder": "404"
+                            "placeholder": 404
                         }
                     ]
                 },
