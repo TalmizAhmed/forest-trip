@@ -11,7 +11,8 @@
                             "jcr:title": "Panel",
                             "fieldType": "panel",
                             "enabled": true,
-                            "visible": true
+                            "visible": true,
+                            "minOccur": 1
                         }
                     }
                 }
@@ -46,8 +47,7 @@
                             "name": "minOccur",
                             "label": "Minimum repetitions",
                             "valueType": "number",
-                            "description": "Minimum number of times the panel appears on the form",
-                            "value": "1"
+                            "description": "Minimum number of times the panel appears on the form"
                         },
                         {
                             "component": "text",

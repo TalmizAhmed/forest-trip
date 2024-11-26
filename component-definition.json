@@ -424,7 +424,8 @@
                   "jcr:title": "Panel",
                   "fieldType": "panel",
                   "enabled": true,
-                  "visible": true
+                  "visible": true,
+                  "minOccur": 1
                 }
               }
             }
