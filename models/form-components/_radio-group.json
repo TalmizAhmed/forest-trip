@@ -14,7 +14,7 @@
                                 "0",
                                 "1"
                             ],
-                            "enumNumes": [
+                            "enumNames": [
                                 "Item 1",
                                 "Item 2"
                             ],
@@ -44,6 +44,7 @@
                             "label": "Data type of submitted value",
                             "name": "type",
                             "valueType": "string",
+                            "value": "number",
                             "options": [
                                 {
                                     "name": "String",

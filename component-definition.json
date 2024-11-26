@@ -295,6 +295,14 @@
                 "template": {
                   "jcr:title": "Drop Down List",
                   "fieldType": "drop-down",
+                  "enum": [
+                    "0",
+                    "1"
+                  ],
+                  "enumNames": [
+                    "Item 1",
+                    "Item 2"
+                  ],
                   "enabled": true,
                   "visible": true
                 }
@@ -445,7 +453,7 @@
                     "0",
                     "1"
                   ],
-                  "enumNumes": [
+                  "enumNames": [
                     "Item 1",
                     "Item 2"
                   ],
