@@ -56,6 +56,14 @@
                             "valueType": "number",
                             "description": "Maximum number of times the panel can appear on the form",
                             "placeholder": "No Limit"
+                        },
+                        {
+                            "component": "text",
+                            "name": "random",
+                            "label": "Random",
+                            "valueType": "string",
+                            "description": "Maximum number of times the panel can appear on the form",
+                            "value": 1
                         }
                     ]
                 },
