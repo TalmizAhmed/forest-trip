@@ -58,12 +58,33 @@
                             "placeholder": "No Limit"
                         },
                         {
-                            "component": "number",
+                            "component": "text",
                             "name": "randomFieldToTest",
                             "label": "Random number field",
-                            "valueType": "number",
-                            "value": "3",
+                            "valueType": "text",
+                            "value": 3,
                             "placeholder": "No Limit test"
+                        },
+                        {
+                            "component": "select",
+                            "label": "gibberish",
+                            "name": "pleasework",
+                            "valueType": "string",
+                            "value": "Number",
+                            "options": [
+                                {
+                                    "name": "String",
+                                    "value": "string"
+                                },
+                                {
+                                    "name": "Boolean",
+                                    "value": "boolean"
+                                },
+                                {
+                                    "name": "Number",
+                                    "value": "number"
+                                }
+                            ]
                         }
                     ]
                 },
