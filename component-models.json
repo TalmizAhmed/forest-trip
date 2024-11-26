@@ -2662,7 +2662,7 @@
             "valueType": "boolean"
           },
           {
-            "component": "text",
+            "component": "number",
             "name": "minOccur",
             "label": "Minimum repetitions",
             "valueType": "number",
@@ -2678,17 +2678,17 @@
             "placeholder": "No Limit"
           },
           {
-            "component": "number",
+            "component": "text",
             "name": "randomFieldToTest",
             "label": "Random number field",
             "valueType": "number",
-            "value": 3,
+            "value": "default val",
             "placeholder": "No Limit test"
           },
           {
             "component": "select",
-            "label": "gibberish",
-            "name": "pleasework",
+            "label": "Random select",
+            "name": "randomSelect",
             "valueType": "string",
             "value": "number",
             "options": [
