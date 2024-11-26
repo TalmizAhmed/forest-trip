@@ -58,10 +58,10 @@
                             "placeholder": "No Limit"
                         },
                         {
-                            "component": "text",
+                            "component": "number",
                             "name": "randomFieldToTest",
                             "label": "Random number field",
-                            "valueType": "text",
+                            "valueType": "number",
                             "value": 3,
                             "placeholder": "No Limit test"
                         },
@@ -70,7 +70,7 @@
                             "label": "gibberish",
                             "name": "pleasework",
                             "valueType": "string",
-                            "value": "Number",
+                            "value": "number",
                             "options": [
                                 {
                                     "name": "String",
