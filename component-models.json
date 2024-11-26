@@ -2682,7 +2682,8 @@
             "name": "randomFieldToTest",
             "label": "Random number field",
             "valueType": "number",
-            "value": "3"
+            "value": "3",
+            "placeholder": "No Limit test"
           }
         ]
       },
