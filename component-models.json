@@ -2666,7 +2666,8 @@
             "name": "minOccur",
             "label": "Minimum repetitions",
             "valueType": "number",
-            "description": "Minimum number of times the panel appears on the form"
+            "description": "Minimum number of times the panel appears on the form",
+            "value": 1
           },
           {
             "component": "text",
@@ -2677,12 +2678,11 @@
             "placeholder": "No Limit"
           },
           {
-            "component": "text",
-            "name": "random",
-            "label": "Random",
-            "valueType": "string",
-            "description": "Maximum number of times the panel can appear on the form",
-            "value": 1
+            "component": "number",
+            "name": "randomFieldToTest",
+            "label": "Random number field",
+            "valueType": "number",
+            "value": "3"
           }
         ]
       },
