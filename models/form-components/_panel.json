@@ -54,7 +54,8 @@
                             "label": "Maximum repetitions",
                             "valueType": "number",
                             "description": "Maximum number of times the panel can appear on the form",
-                            "placeholder": "No Limit"
+                            "placeholder": "No Limit",
+                            "value": "1"
                         }
                     ]
                 },
