@@ -458,7 +458,8 @@
                     "Item 2"
                   ],
                   "enabled": true,
-                  "visible": true
+                  "visible": true,
+                  "orientation": "horizontal"
                 }
               }
             }
@@ -623,7 +624,7 @@
                   "fieldType": "plain-text",
                   "visible": true,
                   "textIsRich": true,
-                  "value": "Adaptive Form Text Component"
+                  "value": "Adaptive Form Text Component."
                 }
               }
             }
