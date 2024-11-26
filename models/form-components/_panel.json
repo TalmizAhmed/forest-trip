@@ -62,8 +62,7 @@
                             "name": "randomFieldToTest",
                             "label": "Random number field",
                             "valueType": "number",
-                            "value": 3,
-                            "placeholder": "No Limit test"
+                            "placeholder": "404"
                         }
                     ]
                 },
