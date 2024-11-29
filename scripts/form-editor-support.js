@@ -223,7 +223,7 @@ async function renderFormBlock(form, editMode) {
 
 async function annotateFormsForEditing(forms) {
   if (typeof window.currentMode !== 'undefined' && window.currentMode === 'preview') {
-    console.log("window.currentMode is 'preview' or is not defined, skipping form annotation");
+    console.log(`window.currentMode = ${window.currentMode}, skipping form annotation`);
     return;
   }
   try {
