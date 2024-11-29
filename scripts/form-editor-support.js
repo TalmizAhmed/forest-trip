@@ -164,6 +164,7 @@ function annotateItems(items, formDefinition, formFieldMap) {
 }
 
 export function annotateFormForEditing(formEl, formDefinition) {
+  console.log('1.25 edit mode class: ', document.documentElement.classList.contains('adobe-ue-edit'));
   if (document.documentElement.classList.contains('adobe-ue-edit')) {
     console.log('1.5 Edit mode found - Annotating form for editing...');
     const block = formEl.closest('.block[data-aue-resource]');
