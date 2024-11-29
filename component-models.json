@@ -380,8 +380,8 @@
             "required": true,
             "valueFormat": "regexp",
             "validation": {
-              "regExp": "^[^$].*",
-              "customErrorMsg": "Name cannot start with $"
+              "regExp": "^(?!.*\\s)[^$].*",
+              "customErrorMsg": "Name cannot start with $ and cannot contain spaces."
             }
           },
           {
@@ -2974,8 +2974,8 @@
             "required": true,
             "valueFormat": "regexp",
             "validation": {
-              "regExp": "^[^$].*",
-              "customErrorMsg": "Name cannot start with $"
+              "regExp": "^(?!.*\\s)[^$].*",
+              "customErrorMsg": "Name cannot start with $ and cannot contain spaces."
             }
           },
           {
@@ -3095,8 +3095,8 @@
             "required": true,
             "valueFormat": "regexp",
             "validation": {
-              "regExp": "^[^$].*",
-              "customErrorMsg": "Name cannot start with $"
+              "regExp": "^(?!.*\\s)[^$].*",
+              "customErrorMsg": "Name cannot start with $ and cannot contain spaces."
             }
           },
           {

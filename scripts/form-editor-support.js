@@ -124,6 +124,7 @@ function annotateItems(items, formDefinition, formFieldMap) {
     for (let i = items.length - 1; i >= 0; i -= 1) {
       const fieldWrapper = items[i];
       if (fieldWrapper.classList?.contains('field-wrapper')) {
+        console.log('3. Annotating field...', fieldWrapper.dataset.id);
         const { id } = fieldWrapper.dataset;
         const fd = getFieldById(formDefinition, id, formFieldMap);
         if (fd && fd.properties) {
@@ -164,6 +165,7 @@ function annotateItems(items, formDefinition, formFieldMap) {
 
 export function annotateFormForEditing(formEl, formDefinition) {
   if (document.documentElement.classList.contains('adobe-ue-edit')) {
+    console.log('1.5 Edit mode found - Annotating form for editing...')
     const block = formEl.closest('.block[data-aue-resource]');
     if (block) {
       block.setAttribute('data-aue-filter', 'form');
@@ -171,6 +173,7 @@ export function annotateFormForEditing(formEl, formDefinition) {
     formEl.classList.add('edit-mode');
   }
   const formFieldMap = {};
+  console.log('2. Annotating form elements...');
   annotateItems(formEl.childNodes, formDefinition, formFieldMap);
 }
 
@@ -219,13 +222,23 @@ async function renderFormBlock(form, editMode) {
 }
 
 async function annotateFormsForEditing(forms) {
-  if (typeof window.currentMode !== 'undefined' && window.currentMode === 'preview') return;
-  forms.forEach(async (form) => {
-    const { formEl, formDef } = (await renderFormBlock(form, true)) || {};
-    if (formEl && formDef) {
-      annotateFormForEditing(formEl, formDef);
-    }
-  });
+  if (typeof window.currentMode !== 'undefined' && window.currentMode === 'preview') {
+    console.log("window.currentMode is 'preview' or is not defined, skipping form annotation");
+    return;
+  }
+  try {
+    forms.forEach(async (form) => {
+      const {
+        formEl,
+        formDef
+      } = (await renderFormBlock(form, true)) || {};
+      if (formEl && formDef) {
+        annotateFormForEditing(formEl, formDef);
+      }
+    });
+  } catch (error) {
+    console.error('Error while annotating forms', error);
+  }
 }
 
 async function instrumentForms(mutationsList) {
@@ -241,6 +254,9 @@ async function instrumentForms(mutationsList) {
       });
     }
   });
+  if (formsEl.length > 0) {
+    console.log('1. Instrumenting forms...');
+  }
   annotateFormsForEditing(formsEl);
 }
 
