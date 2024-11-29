@@ -360,6 +360,7 @@ export function attachEventListners(main) {
   };
 
   if (document.documentElement.classList.contains('adobe-ue-edit')) {
+    console.log('Adobe-ue-edit found');
     ueEditModeHandler();
   } else {
     console.log('No adobe-ue-edit found');
