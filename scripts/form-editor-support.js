@@ -165,7 +165,7 @@ function annotateItems(items, formDefinition, formFieldMap) {
 
 export function annotateFormForEditing(formEl, formDefinition) {
   if (document.documentElement.classList.contains('adobe-ue-edit')) {
-    console.log('1.5 Edit mode found - Annotating form for editing...')
+    console.log('1.5 Edit mode found - Annotating form for editing...');
     const block = formEl.closest('.block[data-aue-resource]');
     if (block) {
       block.setAttribute('data-aue-filter', 'form');
@@ -226,11 +226,13 @@ async function annotateFormsForEditing(forms) {
     console.log(`window.currentMode = ${window.currentMode}, skipping form annotation`);
     return;
   }
+  console.log(`window.currentMode = ${window.currentMode}, annotating forms...`);
+
   try {
     forms.forEach(async (form) => {
       const {
         formEl,
-        formDef
+        formDef,
       } = (await renderFormBlock(form, true)) || {};
       if (formEl && formDef) {
         annotateFormForEditing(formEl, formDef);
