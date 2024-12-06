@@ -88,7 +88,7 @@ main .form form.edit-mode .captcha-wrapper {
 }
 
 /* CSS rule applies to the panel container if it has no children other than the OOTB elements (Label, action items, etc) */
-.panel-wrapper.edit-mode:has(:scope > legend:nth-child(1)):has(:scope > div.repeat-actions:nth-child(2)):has(:scope > button.item-remove:nth-child(3)):not(:has(:scope > *:nth-child(4))) {
+main .form form .panel-wrapper.edit-mode:has(:scope > legend:nth-child(1)):has(:scope > div.repeat-actions:nth-child(2)):has(:scope > button.item-remove:nth-child(3)):not(:has(:scope > *:nth-child(4))) {
     display: flex !important;
     justify-content: center;
     padding: 15px;
@@ -96,6 +96,6 @@ main .form form.edit-mode .captcha-wrapper {
     linear-gradient(90deg,rgba(0 0 0 / 5%),rgba(255 255 255 / 5%),rgba(0 0 0 / 5%));
 }
 
-.panel-wrapper.edit-mode:has(:scope > legend:nth-child(1)):has(:scope > div.repeat-actions:nth-child(2)):has(:scope > button.item-remove:nth-child(3)):not(:has(:scope > *:nth-child(4)))::before {
+main .form form .panel-wrapper.edit-mode:has(:scope > legend:nth-child(1)):has(:scope > div.repeat-actions:nth-child(2)):has(:scope > button.item-remove:nth-child(3)):not(:has(:scope > *:nth-child(4)))::before {
     content: "Panel Container";
 }
