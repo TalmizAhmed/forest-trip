@@ -630,7 +630,19 @@
                   "fieldType": "panel",
                   "fd:viewType": "wizard",
                   "enabled": true,
-                  "visible": true
+                  "visible": true,
+                  "item_1": {
+                    "name": "item_1",
+                    "sling:resourceType": "core/fd/components/form/panelcontainer/v1/panelcontainer",
+                    "jcr:title": "Item 1",
+                    "fieldType": "panel"
+                  },
+                  "item_2": {
+                    "name": "item_2",
+                    "sling:resourceType": "core/fd/components/form/panelcontainer/v1/panelcontainer",
+                    "jcr:title": "Item 2",
+                    "fieldType": "panel"
+                  }
                 }
               }
             }
