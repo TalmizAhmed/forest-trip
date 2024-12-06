@@ -57,6 +57,8 @@ form.edit-mode:not(:has(*)) {
     linear-gradient(90deg,rgba(0 0 0 / 5%),rgba(255 255 255 / 5%),rgba(0 0 0 / 5%));
 }
 
+
+
 form.edit-mode:not(:has(*))::before {
    content: "Adaptive Form";
 }
@@ -87,8 +89,7 @@ main .form form.edit-mode .captcha-wrapper {
                 linear-gradient(90deg,rgba(0 0 0 / 5%),rgba(255 255 255 / 5%),rgba(0 0 0 / 5%));
 }
 
-/* CSS rule applies to the panel container if it has no children other than the OOTB elements (Label, action items, etc) */
-.panel-wrapper.edit-mode:has(:scope > :nth-child(3)):not(:has(:scope > :nth-child(4))) {
+.plain-text-wrapper.edit-mode:has(p:empty) {
     display: flex !important;
     justify-content: center;
     padding: 15px;
@@ -96,7 +97,20 @@ main .form form.edit-mode .captcha-wrapper {
     linear-gradient(90deg,rgba(0 0 0 / 5%),rgba(255 255 255 / 5%),rgba(0 0 0 / 5%));
 }
 
-.panel-wrapper.edit-mode:has(:scope > :nth-child(3)):not(:has(:scope > :nth-child(4)))::before {
+.plain-text-wrapper.edit-mode:has(p:empty)::before {
+    content: "Adaptive Form Text Component";
+}
+
+/* CSS rule applies to the panel container if it has no children other than the OOTB elements (Label, action items, etc) */
+.panel-wrapper.edit-mode:has(:scope > legend.field-label):has(:scope > div.repeat-actions):has(:scope > button.item-remove):not(:has(:scope > *:nth-child(4))) {
+    display: flex !important;
+    justify-content: center;
+    padding: 15px;
+    background: linear-gradient(180deg, rgb(0 0 0 / 5%), rgb(255 255 255 / 5%), rgb(0 0 0 / 5%)),
+                linear-gradient(90deg, rgb(0 0 0 / 5%), rgb(255 255 255 / 5%), rgb(0 0 0 / 5%));
+}
+
+.panel-wrapper.edit-mode:has(:scope > legend.field-label):has(:scope > div.repeat-actions):has(:scope > button.item-remove):not(:has(:scope > *:nth-child(4)))::before {
     content: "Panel Container";
     display: block;
     margin-top: 10px;
