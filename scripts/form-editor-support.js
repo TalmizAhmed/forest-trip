@@ -104,6 +104,7 @@ function getPropertyModel(fd) {
 }
 
 function annotateContainer(fieldWrapper, fd) {
+  fieldWrapper.classList.add('edit-mode');
   fieldWrapper.setAttribute('data-aue-resource', `urn:aemconnection:${fd.properties['fd:path']}`);
   fieldWrapper.setAttribute('data-aue-model', getPropertyModel(fd));
   fieldWrapper.setAttribute('data-aue-label', fd.label?.value || fd.name);
