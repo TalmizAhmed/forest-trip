@@ -304,10 +304,16 @@ async function fetchData({ id }) {
 export async function initAdaptiveForm(formDef, createForm) {
   const data = await fetchData(formDef);
   await registerCustomFunctions();
-  const form = await initializeRuleEngineWorker({
-    ...formDef,
-    data,
-  }, createForm);
+  let form = null;
+  try {
+    form = await initializeRuleEngineWorker({
+      ...formDef,
+      data,
+    }, createForm);
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.error('Failed to initialise Form', e);
+  }
   return form;
 }
 
