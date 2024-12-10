@@ -301,7 +301,7 @@ async function fetchData({ id }) {
   }
 }
 
-export async function initAdaptiveForm(formDef, createForm) {
+export async function initAdaptiveForm(formDef, createForm, useServiceWorker) {
   const data = await fetchData(formDef);
   await registerCustomFunctions();
   let form = null;
@@ -309,7 +309,7 @@ export async function initAdaptiveForm(formDef, createForm) {
     form = await initializeRuleEngineWorker({
       ...formDef,
       data,
-    }, createForm);
+    }, createForm, useServiceWorker);
   } catch (e) {
     // eslint-disable-next-line no-console
     console.error('Failed to initialise Form', e);

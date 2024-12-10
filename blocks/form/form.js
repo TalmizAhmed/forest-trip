@@ -558,8 +558,12 @@ export default async function decorate(block) {
       rules = false;
     } else {
       afModule = await import('./rules/index.js');
+      const useServiceWorker = false;
       if (afModule && afModule.initAdaptiveForm && !block.classList.contains('edit-mode')) {
-        form = await afModule.initAdaptiveForm(formDef, createForm);
+        form = await afModule.initAdaptiveForm(formDef, async (model, data) => {
+          formDef = useServiceWorker ? model : model.getState();
+          return createForm(formDef, data);
+        }, useServiceWorker);
       } else {
         form = await createFormForAuthoring(formDef);
       }

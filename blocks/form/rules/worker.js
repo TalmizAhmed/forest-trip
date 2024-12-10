@@ -17,11 +17,12 @@
  * Adobe permits you to use and modify this file solely in accordance with
  * the terms of the Adobe license agreement accompanying it.
  ************************************************************************ */
-export default async function initializeRuleEngineWorker(formDef, renderHTMLForm) {
-  if (typeof Worker === 'undefined') {
+// eslint-disable-next-line max-len
+export default async function initializeRuleEngineWorker(formDef, renderHTMLForm, useServiceWorker) {
+  if (typeof Worker === 'undefined' || !useServiceWorker) {
     const ruleEngine = await import('./model/afb-runtime.js');
     const form = ruleEngine.createFormInstance(formDef);
-    return renderHTMLForm(form.getState(true), formDef.data);
+    return renderHTMLForm(form, formDef.data);
   }
   const myWorker = new Worker(`${window.hlx.codeBasePath}/blocks/form/rules/RuleEngineWorker.js`, { type: 'module' });
 
