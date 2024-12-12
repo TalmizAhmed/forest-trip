@@ -581,12 +581,15 @@ export default async function decorate(block) {
   }
 }
 
-export function exportForm(path, element) {
+export function exportForm(formUrl, element) {
+  const url = new URL(formUrl).origin;
   const a = document.createElement('a');
-  a.href = path;
+  a.href = formUrl;
+  a.style.all = 'unset';
+  a.innerHTML = 'Loading Form...';
   element.appendChild(a);
   const style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = new URL('./form.css');
+  style.href = `${url}/blocks/form/form.css`;
   document.head.appendChild(style);
 }
