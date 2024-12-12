@@ -580,3 +580,13 @@ export default async function decorate(block) {
     container.replaceWith(form);
   }
 }
+
+export function exportForm(path, element) {
+  const a = document.createElement('a');
+  a.href = path;
+  element.appendChild(a);
+  const style = document.createElement('link');
+  style.rel = 'stylesheet';
+  style.href = new URL('./form.css');
+  document.head.appendChild(style);
+}
