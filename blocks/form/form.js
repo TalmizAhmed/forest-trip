@@ -584,7 +584,7 @@ export default async function decorate(block) {
 export async function exportForm(formUrl, element) {
   const url = new URL(formUrl).origin;
   const a = document.createElement('a');
-  a.href = formUrl;
+  [a.href] = formUrl.split('/jcr:content');
   a.style.all = 'unset';
   a.innerHTML = 'Loading Form...';
   element.appendChild(a);
